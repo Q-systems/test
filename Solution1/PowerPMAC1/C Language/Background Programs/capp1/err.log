@@ -1,0 +1,3 @@
+powerpc-meau-linux-gnu-gcc: fatal error: no input files
+compilation terminated.
+make: *** [capp1.o] Error 1

@@ -1,0 +1,11 @@
+global Aantal = 0;
+global Teller1 =0;
+global Teller2 =0;
+global Runcounter =0;
+global Stepcounter =0;
+global Startposition =-27000;
+global Stepsize =99000;
+global Steps =15;
+global Runs =5;
+global Waittime =5;
+global Overrun =1000; 

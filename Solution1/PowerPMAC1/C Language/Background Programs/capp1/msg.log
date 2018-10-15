@@ -1,0 +1,2 @@
+rm -f "../../../Bin/Debug/capp1.out" capp1.o
+powerpc-meau-linux-gnu-gcc -mhard-float -funsigned-char --sysroot=/opt/powerpc-465-rootfs -I/usr/local/dtlibs/rtpmac -I/usr/local/dtlibs/libppmac -I/usr/local/dtlibs/libopener -I/opt/powerpc-465-rootfs/usr/local/xenomai-2.6.2.1/include -I/opt/powerpc-465-rootfs/usr/local/xenomai-2.6.2.1/include/posix  -I -D_GNU_SOURCE -D_REENTRANT -D__XENO__  -g3 -c capp1.c -o capp1.o

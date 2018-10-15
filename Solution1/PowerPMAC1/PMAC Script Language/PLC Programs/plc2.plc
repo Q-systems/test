@@ -1,0 +1,228 @@
+// Power PMAC Script PLC Program Template.
+// The following Sample PLC PROGRAM is the standard template for creating Script PLC Programs.
+// Sample PLC PROGRAM
+/*
+
+**************************************
+
+
+*/
+open plc 2
+
+Aantal = 0
+
+while (Aantal < 5) {
+
+	motor[1].jogspeed=50
+	cmd "#1j=-28000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=72000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=172000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=272000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+		motor[1].jogspeed=50
+	cmd "#1j=372000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=472000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=572000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=672000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+		motor[1].jogspeed=50
+	cmd "#1j=772000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=872000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=972000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+		motor[1].jogspeed=50
+	cmd "#1j=1072000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=1172000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=1272000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=1372000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=1472000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=1473000"
+
+	call Timer(4.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=1472000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+		motor[1].jogspeed=50
+	cmd "#1j=1372000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=1272000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=1172000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+		motor[1].jogspeed=50
+	cmd "#1j=1072000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=972000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=872000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=772000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+		motor[1].jogspeed=50
+	cmd "#1j=672000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=572000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=472000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+		motor[1].jogspeed=50
+	cmd "#1j=372000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=272000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=172000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+		motor[1].jogspeed=50
+	cmd "#1j=72000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=-28000"
+
+	call Timer(6.0)
+	while (Motor[1].inpos ==0) {}
+
+	motor[1].jogspeed=50
+	cmd "#1j=-29000"
+
+	call Timer(4.0)
+	while (Motor[1].inpos ==0) {}
+
+
+	Aantal = Aantal+1;
+}
+
+disable plc 2
+
+// --------------------User Code Goes Here------------------------
+close
+/****************************************/
