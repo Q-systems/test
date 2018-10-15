@@ -70,6 +70,9 @@
     <Content Include="PMAC Script Language\PLC Programs\plc5.plc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="PMAC Script Language\PLC Programs\plc6.plc">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="C Language\" />
     <Folder Include="C Language\Background Programs\" />
     <Folder Include="C Language\Background Programs\capp1" />
